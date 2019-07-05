@@ -1,0 +1,17 @@
+<h1 style="color:red">*ngIf</h1>
+<br>
+<button class="btn btn-danger" (click)="showhide()">show/hide</button>
+<br>
+<div *ngIf="status">hello</div>
+
+<br> <hr>
+
+<div *ngIf="statusLogin; else NoiDungElse" style="background-color: rosybrown">
+    <button class="btn btn-danger" (click)="dangxuat()">Đăng xuất</button>
+    <h2>Xin chào!!!</h2>
+</div>
+
+<ng-template #NoiDungElse style="background-color: slateblue">
+    <button class="btn btn-success" (click)="dangnhap()">Đăng nhập</button>
+    <h2>Vui lòng đăng nhập</h2>
+</ng-template>

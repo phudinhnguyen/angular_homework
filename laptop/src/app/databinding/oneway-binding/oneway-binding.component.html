@@ -1,0 +1,16 @@
+
+<!-- Interpolation  -->
+
+<p>oneway-binding works!</p>
+<div>{{name}}</div>
+
+<br>
+<br>
+
+<!-- Property Binding -->
+<input type="text" [value]="name" #thamso>
+<br>
+<br>
+
+<!-- Event Binding -->
+<button class="btn btn-success" (click)="eventBinding(thamso.value)">Event Binding</button>
